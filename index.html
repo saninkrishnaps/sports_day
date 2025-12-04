@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Day Results</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>College Sports Day — Results</h1>
+<div class="top-controls">
+<input id="searchInput" placeholder="Search events or names..." />
+<a class="admin-link" href="login.html">Admin</a>
+</div>
+</header>
+
+
+<main>
+<section class="table-wrap">
+<table id="resultsTable">
+<thead>
+<tr>
+<th>Event</th>
+<th>Category</th>
+<th>1st</th>
+<th>2nd</th>
+<th>3rd</th>
+<th>Points</th>
+<th>Last Updated</th>
+</tr>
+</thead>
+<tbody id="resultsBody">
+<!-- rows inserted here -->
+</tbody>
+</table>
+</section>
+
+
+<section class="medal-tally" id="medalTally">
+<h2>Medal Tally</h2>
+<div id="tallyList">Loading...</div>
+</section>
+</main>
+
+
+<footer>
+<small>Hosted on GitHub Pages • Backend: Firebase Firestore</small>
+</footer>
+
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

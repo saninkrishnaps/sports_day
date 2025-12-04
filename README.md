@@ -1,2 +1,2 @@
-# sports_day
-college sports day web
+# Sports Day Project
+Simple project for results display.

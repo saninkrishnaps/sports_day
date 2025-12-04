@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Login — Sports Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="login-page">
+<div class="card">
+<h2>Admin Login</h2>
+<p>Enter the admin password to access the dashboard.</p>
+<input id="passwordInput" type="password" placeholder="Password" />
+<button id="loginBtn">Login</button>
+<p id="loginMsg" class="muted"></p>
+</div>
+</main>
+
+
+<script>
+// Simple client-side password check (not secure). Replace with Firebase Auth for production.
+const ADMIN_PASSWORD = 'admin123'; // change this before deployment
+document.getElementById('loginBtn').addEventListener('click', () => {
+const pw = document.getElementById('passwordInput').value;
+if (pw === ADMIN_PASSWORD) {
+// simple redirect to admin page
+location.href = 'admin.html';
+} else {
+document.getElementById('loginMsg').textContent = 'Incorrect password';
+}
+});
+</script>
+</body>
+</html>

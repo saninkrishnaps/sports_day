@@ -1,0 +1,26 @@
+:root{--accent:#0b74de;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:#f7f9fc;color:#222}
+header{background:#fff;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+header h1{margin:0;font-size:18px}
+.top-controls{display:flex;gap:12px;align-items:center}
+.top-controls input{padding:8px 10px;border:1px solid #ddd;border-radius:6px}
+.admin-link, .public-link{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+main{padding:20px;display:grid;grid-template-columns:1fr 320px;gap:18px}
+.table-wrap{background:#fff;padding:12px;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.table-wrap table{width:100%;border-collapse:collapse}
+.table-wrap th, .table-wrap td{padding:8px;text-align:left;border-bottom:1px solid #f0f0f0}
+.medal-tally{background:#fff;padding:12px;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.admin-main{padding:20px;display:flex;gap:20px}
+.form-section{flex:1;background:#fff;padding:12px;border-radius:10px}
+.form-section input{display:block;width:100%;padding:8px;margin:8px 0;border:1px solid #ddd;border-radius:6px}
+.form-actions{display:flex;gap:8px}
+.form-actions button{padding:8px 12px;border-radius:6px;border:none;background:var(--accent);color:#fff}
+.list-section{flex:1;background:#fff;padding:12px;border-radius:10px}
+.login-page{min-height:80vh;display:flex;align-items:center;justify-content:center}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 18px rgba(11,116,222,0.06);width:320px;text-align:center}
+.muted{color:var(--muted)}
+footer{text-align:center;padding:16px;color:#666}
+@media(max-width:900px){main{grid-template-columns:1fr;}
+.admin-main{flex-direction:column}
+}
